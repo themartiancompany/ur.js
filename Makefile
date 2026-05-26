@@ -26,8 +26,8 @@
 
 SHELL=bash
 PREFIX ?= /usr/local
-_PROJECT_NPM=solidity-compiler
-_PROJECT=$(_PROJECT_NPM).js
+_PROJECT=solidity-compiler
+_PROJECT_NPM=$(_PROJECT).js
 _NAMESPACE=themartiancompany
 DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/$(_PROJECT)
 USR_DIR=$(DESTDIR)$(PREFIX)
@@ -107,10 +107,10 @@ build-man:
 	  -lsh \
 	  "build/man"; \
 	cat \
-	  "man/$(_PROJECT_NPM).1.rst" | \
+	  "man/$(_PROJECT).1.rst" | \
 	  sed \
-	    "s/$(_PROJECT_NPM)/$(_PROJECT)/g" > \
-	    "build/man/$(_PROJECT).1.rst"; \
+	    "s/$(_PROJECT)/$(_PROJECT_NPM)/g" > \
+	    "build/man/$(_PROJECT_NPM).1.rst"; \
 	_version="$$( \
 	  npm \
 	    view \
@@ -125,10 +125,10 @@ build-man:
 	  -i \
 	  "build/man/variables.rst"; \
 	rst2man \
-	  "build/man/$(_PROJECT).1.rst" \
-	  "build/man/$(_PROJECT).1"; \
+	  "build/man/$(_PROJECT_NPM).1.rst" \
+	  "build/man/$(_PROJECT_NPM).1"; \
 	rm \
-	  "build/man/$(_PROJECT).1.rst";
+	  "build/man/$(_PROJECT_NPM).1.rst";
 	# rm \
 	#   "build/man/variables.rst"
 
