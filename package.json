@@ -18,9 +18,9 @@
     "README.md",
     "dist",
     "lib",
-    "libevm-git",
-    "libevm-git.webpack.config.js",
-    "evm-git",
+    "libssolve",
+    "libssolve.webpack.config.js",
+    "ssolve",
     "fs-worker.webpack.config.js",
     "package.json",
     "serve.json",
@@ -86,10 +86,8 @@
     "libevm-git",
   "bin":
     { 
-      "evm-git":
-        "evm-git",
-      "egit":
-        "egit"
+      "ssolve":
+        "ssolve"
     },
   "yargs": {
     "parse-numbers":
