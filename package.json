@@ -1,8 +1,8 @@
-{ "name": "ss.js",
+{ "name": "seed-system",
   "version":
     "0.0.1",
   "description":
-    "Git On Ethereum.",
+    "Reference Seed System client.",
   "funding": {
     "type":
       "patreon",

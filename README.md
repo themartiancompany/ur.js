@@ -19,50 +19,23 @@
 [comment]: <> (License along with this program.)
 [comment]: <> (If not, see <https://www.gnu.org/licenses/>.)
 
-# Solidity compiler
+# Seed System
 
-Javascript written
-[Solidity](
-  https://github.com/ethereum/solidity)
-compiler using
-[Hardhat](
-  https://github.com/NomicFoundation/hardhat)
-and
-[solc](
-  https://github.com/themartiancompany/solidity)
-as backends.
+It deprecates DNS.
 
 ```bash
-solidity-compiler \
-  <contract>
+man \
+  ss
 ```
 
-It depends on the
-[Crash Javascript](
-  https://github.com/themartiancompany/crash-bash)
-library and uses
-[GNU Indent](
-  https://www.gnu.org/software/indent)
-to properly parse Hardhat configuration
-files at runtime to create run-once projects.
-
-It is a dependency for
-[EVM Make](
-  https://github.com/themartiancompany/evm-make)
-and so a build dependency for projects written
-using the 
-[libEVM](
-  https://github.com/themartiancompany/libevm)
-library.
-
-This project is part of the EVM Toolchain.
+This project is part of the undeletable internet.
 
 ## Usage
 
 Help can be displayed by typing
 
 ```bash
-solidity-compiler \
+ss \
   -h
 ```
 
@@ -71,14 +44,14 @@ the manual.
 
 ```bash
 man \
-  solidity-compiler
+  ss
 ```
 
 Extra documentation is in the `docs` directory.
 
 ## Installation
 
-The compiler in this source repo
+The client in this source repo
 can be installed from source using GNU Make.
 
 ```bash
@@ -86,7 +59,7 @@ make \
   install
 ```
 
-The compiler has officially published on the
+The client has officially published on the
 the uncensorable
 [Ur](
   https://github.com/themartiancompany/ur)
@@ -101,14 +74,14 @@ To install it from there just type
 
 ```bash
 ur \
-  solidity-compiler
+  seed-system
 ```
 
 A censorable HTTP Github mirror of the recipe published there,
 containing a full list of the software dependencies needed to run the
 tools is hosted on
-[solidity-compiler-ur](
-  https://github.com/themartiancompany/solidity-compiler-ur).
+[seed-system-ur](
+  https://github.com/themartiancompany/seed-system-ur).
 
 Be aware the mirror could go offline any time as Github and more
 in general all HTTP resources are inherently unstable and censorable.
